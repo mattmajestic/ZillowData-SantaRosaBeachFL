@@ -49,10 +49,6 @@ Beachhouse_Data <- plot_grid(Listing_lp, Rental_lp,Days_on_lp,ListPrice_on_lp)
 #dev.off()
 
 
-
-Sys.setenv("plotly_username"="mmajestic")
-Sys.setenv("plotly_api_key"="CoZqLHZsym8LVQmT1yhE")
-
 api_create(Listing_lp_plotly, filename = "Listing Price over Time")
 api_create(Rental_lp_plotly, filename = "Rental Price over Time")
 api_create(TurnOver_lp_plotly, filename = "Turnover over Time")
